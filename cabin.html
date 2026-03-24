@@ -17,14 +17,14 @@
         window.onload = function () {
             // Get the query string (everything after ?)
             //const queryString = window.location.search;
-			const parts = document.url.split("?");
+			const parts = document.URL.split("?");
 			let suffix = "";
-			if parts[1] {
+			if parts.length > 1 {
 				suffix = "?" + parts[1];
 			}
 
             // Define the target page
-            const targetPage = "https://fraser.epizy.com/php/Index.php"
+            const targetPage = "https://fraser.epizy.com/php/Index.php";
 
             // Redirect while preserving the query string
             setTimeout(function () {
