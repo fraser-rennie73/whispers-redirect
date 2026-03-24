@@ -15,14 +15,16 @@
     <script>
         window.onload = function () {
             // Get the query string (everything after ?)
-            const queryString = window.location.search;
+            // const queryString = window.location.search;
+			const parts = document.URL.split("?");
+			const suffix = (parts.length > 1 ? suffix = "?" + parts[1] : "");
 
             // Define the target page
             const targetPage = "https://fraser.epizy.com/php/Index.php"
 
             // Redirect while preserving the query string
             setTimeout(function () {
-    window.location.href = targetPage + queryString;
+    window.location.href = targetPage + suffix;
 }, 2000);
         };
     </script>
