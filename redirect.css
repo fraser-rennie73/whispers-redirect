@@ -35,11 +35,13 @@ div, h1, p { margin: 0; padding: 0; font-weight: normal; font-size: 100%; }
 			color: #fff;
 		}
 		h1 span:first-child {
-			letter-spacingx: 0.2em;
+			letter-spacing: 0.2em;
+			margin: 0 -0.1em 0 0.1em;
 		}
 		h1 span:not(:first-child):not(:last-child) {
 			font-size: 75%;
-			letter-spacingx: 0.4em;
+			letter-spacing: 0.4em;
+			margin: 0 -0.2em 0 0.2em;
 		}
 		h1 span:last-child {
 			font-size: 166%;
