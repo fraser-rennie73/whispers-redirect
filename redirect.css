@@ -1,6 +1,7 @@
 div, h1, p { margin: 0; padding: 0; font-weight: normal; font-size: 100%; }
         body
 {
+	box-sizing: border-box;
 	font-family: 'Courier New', 'Times New Roman', Serif;
 	background-color: #000020;
 	color: #d6d2c4;
@@ -16,6 +17,7 @@ div, h1, p { margin: 0; padding: 0; font-weight: normal; font-size: 100%; }
 }
         
         .page {
+			padding: 0.66rem 0.33rem;
             display: flex;
 			flex-direction: column;
             justify-content: space-between;
