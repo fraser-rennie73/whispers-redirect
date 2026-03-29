@@ -40,7 +40,6 @@ div, h1, p { margin: 0; padding: 0; font-weight: normal; font-size: 100%; }
 		h1 span {
 			display: block;
 			line-height: 0.9;
-			color: #fff;
 		}
 		h1 span:first-child {
 			letter-spacing: 0.2em;
