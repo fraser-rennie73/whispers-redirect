@@ -59,10 +59,23 @@ div, h1, p { margin: 0; padding: 0; font-weight: normal; font-size: 100%; }
 			content: "-";
 		}
 
-		.page *:nth-child(3) {
+		.page *:nth-last-child(2) {
 			flex-grow: 1;
 		}
 
 		.page p:last-child {
 			font-size: 125%;
+			position: relative;
     }
+	.page p:last-child::after {
+		content: '';
+		position: absolute;
+		animation: dot-dot-dot 1.5s linear alternate infinite;
+	}
+
+	@keyframes dot-dot-dot {
+		0% { content: ''; }
+		33% { content: '.'; }
+		66% { content: '..';}
+		100% { content: '...';}
+	}
