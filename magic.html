@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Whispers From The Void">
+    <meta property="og:description" content="The forbidden archive was never meant for unprepared minds. Within its depths lie the horrors faced by the Sons of Monas when the cosmic boundary wore dangerously thin.">
+	<meta property="og:image" content="https://fraser.epizy.com/php/Images/letters.jpg">
+    <meta property="og:url" content="https://fraser.epizy.com/php/Index.php">
+    <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+	<link href="redirect.css?v=0008" rel="stylesheet">
+    <title>Whispers From The Void</title>
+    <script>
+        window.onload = function () {
+            // Get the query string (everything after ?)
+            //const queryString = window.location.search;
+			const parts = document.URL.split("?");
+			let suffix = "";
+			if (parts.length > 1) {
+				suffix = "?" + parts[1];
+			}
+
+            // Define the target page
+            const targetPage = "https://fraser.epizy.com/php/Index.php";
+
+            // Redirect while preserving the query string
+            setTimeout(function () {
+    window.location.href = targetPage + suffix;
+}, 2000);
+        };
+    </script>
+    <style>
+body
+{
+	background: url(images/letters.jpg);
+}
+		h1 {
+background-image: radial-gradient(ellipse, rgba(0,0,0, 0.5) 33%, transparent 66%);
+		}
+    </style>
+</head>
+<body>
+    <div class="page">
+      <h1><span>Whispers</span><span>from the</span><span>Void</span></h1>
+      <h1>The Forbidden Archive of the Sons of Monas</h1>
+      <p>The Archive was never meant for unprepared minds. Within its depths lie the horrors faced by the Sons and Daughters of Monas when the boundary between our world and the cosmic abyss wore dangerously thin.</p>
+	  <p>Unseen forces are sending you elsewhere, please wait</p>
+    </div>
+</body>
+</html>
